@@ -1,6 +1,6 @@
 # OpenAI API (GPT-4.1 mini)
 
-A simple full-stack AI chat application built with React, Node.js, Express, and the OpenAI API.
+A simple full stack AI chat application built with React, Node.js, Express, and the OpenAI API.
 
 ## Features
 
@@ -23,7 +23,7 @@ A simple full-stack AI chat application built with React, Node.js, Express, and 
 
 ## Purpose
 
-This project was created as part of my full-stack web development learning journey. My goal was to learn how to build a complete web application by connecting a React frontend with a Node.js backend and integrating the OpenAI API.
+This project was created as part of my full stack web development learning journey. My goal was to learn how to build a complete web application by connecting a React frontend with a Node.js backend and integrating the OpenAI API.
 
 Throughout the development process, I used AI tools to help explain programming concepts, debug issues, and improve my code. The application itself was designed, built, tested, and integrated by me.
 
