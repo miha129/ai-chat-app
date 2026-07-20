@@ -1,4 +1,4 @@
-# AI Chat App
+# OpenAI API (GPT-4.1 mini)
 
 A simple full-stack AI chat application built with React, Node.js, Express, and the OpenAI API.
 
