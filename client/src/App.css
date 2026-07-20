@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 30px 16px;
+}
+
+.chat {
+  width: 100%;
+  max-width: 850px;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  background: #111827;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.chat-header {
+  padding: 22px;
+  text-align: center;
+  border-bottom: 1px solid #334155;
+}
+
+.chat-header h1 {
+  margin: 0;
+  color: white;
+}
+
+.chat-header p {
+  margin: 7px 0 0;
+  color: #94a3b8;
+}
+
+.messages {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.message-row {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.ai-row {
+  justify-content: flex-start;
+}
+
+.user-row {
+  justify-content: flex-end;
+}
+
+.message {
+  max-width: 72%;
+  padding: 13px 16px;
+  border-radius: 16px;
+}
+
+.message strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.message p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.ai-message {
+  color: #e2e8f0;
+  background: #1e293b;
+  border-bottom-left-radius: 4px;
+}
+
+.user-message {
+  color: white;
+  background: #2563eb;
+  border-bottom-right-radius: 4px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  padding: 18px;
+  border-top: 1px solid #334155;
+  background: #0f172a;
+}
+
+.input-area input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px 15px;
+  color: white;
+  background: #1e293b;
+  border: 1px solid #475569;
+  border-radius: 10px;
+  outline: none;
+}
+
+.input-area input:focus {
+  border-color: #3b82f6;
+}
+
+.input-area button {
+  padding: 12px 20px;
+  color: white;
+  font-weight: bold;
+  background: #2563eb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 0;
+  }
+
+  .chat {
+    min-height: 100vh;
+    border: none;
+    border-radius: 0;
+  }
+
+  .message {
+    max-width: 88%;
+  }
+
+  .input-area button {
+    padding: 12px;
+  }
+}
+.message {
+  animation: messageAppear 0.3s ease-out;
+}
+
+@keyframes messageAppear {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
